@@ -27,7 +27,10 @@ You can find a basic guide for markdown formatting [here](https://www.markdowngu
 N/A
 
 #### How you passed the challenge
-** Steps here **
+1. Find a proxy by searching Google.
+2. Close everything else and pray the proxy doesn't log anything important.
+3. Enable the proxy.
+4. Reload the webpage.
 
 #### What sins are evidenced in this challenge
 ** Sins here **
@@ -44,7 +47,10 @@ N/A
 N/A
 
 #### How you passed the challenge
-** Steps here **
+1. Think "I wish chrome would tell me what headers I am sending on requests so I could use curl"
+2. Refuse to download a different browser or proxy interceptor.
+3. Download an extension for chrome that allows me to change headers.
+4. Change user-agent to EnigmaFox.
 
 #### What sins are evidenced in this challenge
 ** Sins here **
@@ -61,7 +67,7 @@ N/A
 N/A
 
 #### How you passed the challenge
-** Steps here **
+1. Provide SQL payload `admin' or '1'='1'--`
 
 #### What sins are evidenced in this challenge
 ** Sins here **
