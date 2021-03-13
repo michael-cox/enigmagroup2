@@ -81,10 +81,11 @@ N/A
 ### Basic 22
 
 #### Credentials
-** Credentials here**
+`administrator:bl1nd`
 
 #### How you found the credentials
-** Steps here **
+1. Notice that modifying the `id` query parameter to a number greater than 4 will generate errors.
+2. Enter `union select 1,username,password from users` after the id
 
 #### What sins are evidenced in this challenge
 ** Sins here **
