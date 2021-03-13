@@ -84,8 +84,11 @@ N/A
 `administrator:bl1nd`
 
 #### How you found the credentials
-1. Notice that modifying the `id` query parameter to a number greater than 4 will generate errors.
-2. Enter `union select 1,username,password from users` after the id
+1. Notice that modifying the `id` query parameter to a number greater than 4 will generate errors
+2. Enter `union select 1,username,password from users` after an invalid id such ass `null`
+3. Decrypt the md5 hashed password using your favorite md5 decrypting tool
+4. Login on the User Login page
+5. Notice that upon succesful login, you are redirected to `/complete.php?pass=<hashed password>`
 
 #### What sins are evidenced in this challenge
 ** Sins here **
@@ -99,13 +102,17 @@ N/A
 ### Basic 23
 
 #### Credentials
-** Credentials here**
+`administrator:asdfgh`
 
 #### How you found the credentials
-** Steps here **
+1. Notice that modifying the `id` query paramater can yield errors.
+2. Enter `union all select 1,username,password from users` after an invalid id
+3. Decrypt the md5 hashed password using your favorite md5 decrypting tool
+4. Decrypt the decrypted md5 hash to get the real password.
+5. Login on the User Login page
+6. Notice that upon succesful login, you are redirected to `/complete.php?pass=<hashed password>`
 
 #### What sins are evidenced in this challenge
-** Sins here **
 
 #### How could those sins be mitigated
 ** Mitigations here **
