@@ -2,9 +2,9 @@
 
 ## Student Information
 
-* Student name: **enter name here**
-* NetId: **enter NetId here**
-* Enigma group profile: <https://www.enigmagroup.org/profile/**enter profile id here**>
+* Student name: Michael Cox
+* NetId: mcox59
+* Enigma group profile: <https://www.enigmagroup.org/profile/66960>
 
 
 ## Project Description
@@ -33,11 +33,12 @@ N/A
 4. Reload the webpage.
 
 #### What sins are evidenced in this challenge
-** Sins here **
+* [CWE-284: Improper Access Control](https://cwe.mitre.org/data/definitions/284.html)
+* [CWE-290: Authentication Bypass by Spoofing](https://cwe.mitre.org/data/definitions/290.html)
 
 #### How could those sins be mitigated
-** Mitigations here **
-
+* Only allow access through a secure VPN
+* Only use secure authentication methods to access confidential pages
 
 
 ---
@@ -53,10 +54,12 @@ N/A
 4. Change user-agent to EnigmaFox.
 
 #### What sins are evidenced in this challenge
-** Sins here **
+* [CWE-284: Improper Access Control](https://cwe.mitre.org/data/definitions/284.html)
+* [CWE-602: Client-Side Enforcement of Server-Side Security](https://cwe.mitre.org/data/definitions/602.html)
 
 #### How could those sins be mitigated
-** Mitigations here **
+* I'm not sure this is a standardized or practical approach to securing an app.
+    * If it must be "locked down" to a single browser, maybe implement a browser or extension that uses better checks?
 
 
 
@@ -70,10 +73,12 @@ N/A
 1. Provide SQL payload `admin' or '1'='1'--`
 
 #### What sins are evidenced in this challenge
-** Sins here **
+* [CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')](https://cwe.mitre.org/data/definitions/89.html)
+* [CWE-287: Improper Authentication](https://cwe.mitre.org/data/definitions/287.html)
 
 #### How could those sins be mitigated
-** Mitigations here **
+* Use a secure authentication framework, or
+* Use a standard library for input sanitization
 
 
 
@@ -91,10 +96,14 @@ N/A
 5. Notice that upon succesful login, you are redirected to `/complete.php?pass=<hashed password>`
 
 #### What sins are evidenced in this challenge
-** Sins here **
+* [CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')](https://cwe.mitre.org/data/definitions/89.html)
+* [CWE-328: Reversible One-Way Hash](https://cwe.mitre.org/data/definitions/328.html)
+* [CWE-759: Use of a One-Way Hash without a Salt](https://cwe.mitre.org/data/definitions/759.html)
 
 #### How could those sins be mitigated
-** Mitigations here **
+* Use a secure authentication framework, or
+* Securely hash passwords
+* Use a standard library for input sanitization
 
 
 
@@ -113,9 +122,14 @@ N/A
 6. Notice that upon succesful login, you are redirected to `/complete.php?pass=<hashed password>`
 
 #### What sins are evidenced in this challenge
+* [CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')](https://cwe.mitre.org/data/definitions/89.html)
+* [CWE-328: Reversible One-Way Hash](https://cwe.mitre.org/data/definitions/328.html)
+* [CWE-759: Use of a One-Way Hash without a Salt](https://cwe.mitre.org/data/definitions/759.html)
 
 #### How could those sins be mitigated
-** Mitigations here **
+* Use a secure authentication framework, or
+* Securely hash passwords
+* Use a standard library for input sanitization
 
 
 
